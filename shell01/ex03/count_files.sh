@@ -1,1 +1,1 @@
-ls -l | wc -l
+echo `find . -type f -o -type d | wc -l`
