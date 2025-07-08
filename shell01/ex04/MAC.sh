@@ -1,1 +1,1 @@
-ifconfig | grep '..:..:..:..:..:..' | sed "s/ether//" | sed "s/[[:space:]]//g"
+ifconfig -a | grep ether | awk -F' ' '{print $2}'
