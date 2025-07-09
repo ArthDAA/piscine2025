@@ -6,17 +6,17 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 20:44:19 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/09 21:01:30 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/09 21:07:13 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_rev_int_tab(int *tab, int size)
 {
-	int temp;
-	int i;
-	
+	int	temp;
+	int	i;
+
 	i = 0;
-	while(i < (size / 2))
+	while (i < (size / 2))
 	{
 		temp = tab[i];
 		tab[i] = tab[size - 1 - i];
