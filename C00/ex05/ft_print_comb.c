@@ -6,7 +6,7 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 00:05:21 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/09 00:44:33 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/09 07:58:53 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,26 +35,23 @@ void	ft_print_comb (void)
 	int	c;
 
 	a = '0';
-	b = '1';
-	c = '2';
 	while(a <= '7')
 	{
+		b = a + 1;
 		while(b <= '8')
 		{
+			c = b + 1;
 			while(c <= '9')
 			{
 				ft_print(a, b, c);
 				c++;
 			}
 			b++;
-			c = b + 1;
 		}
 		a++;
-		b = a + 1;
 	}
 }
-
-int main()
-{
-	ft_print_comb();
-}
+//int main()
+//{
+//	ft_print_comb();
+//}:
