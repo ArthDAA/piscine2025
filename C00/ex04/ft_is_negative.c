@@ -6,13 +6,13 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 19:44:32 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/09 00:04:41 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/09 14:33:23 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar (char c)
+void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }

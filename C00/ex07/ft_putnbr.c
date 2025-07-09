@@ -6,7 +6,7 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/09 10:16:51 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/09 10:48:54 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/09 14:39:26 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ void	ft_putchar(char c)
 	write (1, &c, 1);
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
 	{
 		write (1, "-2147483648", 11);
-		return;
+		return ;
 	}
 	if (nb < 0)
 	{
@@ -33,12 +33,12 @@ void ft_putnbr(int nb)
 	{
 		ft_putnbr(nb / 10);
 	}
-	ft_putchar('0'+(nb % 10));
+	ft_putchar('0' +(nb % 10));
 }
-
+/*
 int main()
 {
 	ft_putnbr(-2147483648);
 }
 
-
+*/

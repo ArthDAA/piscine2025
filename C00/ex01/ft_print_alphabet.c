@@ -6,13 +6,13 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 19:22:00 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/09 00:01:41 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/09 14:25:55 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar (char c)
+void	ft_putchar(char c)
 {
 	write (1, &c, 1);
 }
@@ -20,9 +20,9 @@ void	ft_putchar (char c)
 void	ft_print_alphabet(void)
 {
 	int	a;
-	
+
 	a = 'a';
-	while(a <= 'z')
+	while (a <= 'z')
 	{
 		ft_putchar(a);
 		a++;

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/09 00:05:21 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/09 14:36:11 by arde-ass         ###   ########.fr       */
+/*   Created: 2025/07/09 13:25:18 by arde-ass          #+#    #+#             */
+/*   Updated: 2025/07/09 13:55:08 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,41 +17,54 @@ void	ft_putchar(char c)
 	write (1, &c, 1);
 }
 
-void	ft_print(char a, char b, char c)
+void	ft_putnbr(int nb)
 {
-	ft_putchar(a);
-	ft_putchar(b);
-	ft_putchar(c);
-	if (a != '7')
+	if (nb >= 10)
+	{
+		ft_putnbr(nb / 10);
+	}
+	ft_putchar('0' + (nb % 10));
+}
+
+void	ft_print(int a, int b)
+{
+	if (a < 10)
+	{
+		ft_putchar('0');
+	}
+	ft_putnbr(a);
+	ft_putchar(' ');
+	if (b < 10)
+	{
+		ft_putchar('0');
+	}
+	ft_putnbr(b);
+	if (a != 98)
 	{
 		write (1, ", ", 2);
 	}
 }
 
-void	ft_print_comb(void)
+void	ft_print_comb2(void)
 {
 	int	a;
 	int	b;
-	int	c;
 
-	a = '0';
-	while (a <= '7')
+	a = 0;
+	while (a <= 98)
 	{
 		b = a + 1;
-		while (b <= '8')
+		while (b <= 99)
 		{
-			c = b + 1;
-			while (c <= '9')
-			{
-				ft_print(a, b, c);
-				c++;
-			}
+			ft_print(a, b);
 			b++;
 		}
 		a++;
 	}
 }
-//int main()
-//{
-//	ft_print_comb();
-//}:
+/*
+int main()
+{
+	ft_print_comb2();
+}
+*/
