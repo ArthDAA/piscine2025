@@ -6,7 +6,7 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 14:52:01 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/10 18:13:37 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/10 19:04:39 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ char	*ft_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
-	return dest;
+	return (dest);
 }
