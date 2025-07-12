@@ -1,6 +1,6 @@
 #define top_left 'A'
-#define top_right 'C'
-#define bot_left 'A'
+#define top_right 'A'
+#define bot_left 'C'
 #define bot_right 'C'
 #define line 'B'
 #define column 'B'

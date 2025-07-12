@@ -25,7 +25,7 @@ void	ft_print(int x, int y, int i, int j)
 		ft_putchar(' ');
 }
 
-void    rush(int x, int y)
+void    rush(int x, int y, char a, char b, char c, char d, char e, char f)
 {
 	int	i;
 	int	j;

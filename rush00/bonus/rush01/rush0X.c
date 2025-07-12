@@ -1,9 +1,9 @@
-#define top_left 'A'
-#define top_right 'C'
-#define bot_left 'A'
-#define bot_right 'C'
-#define line 'B'
-#define column 'B'
+#define top_left '/'
+#define top_right '\'
+#define bot_left '\'
+#define bot_right '/'
+#define line '*'
+#define column '*'
 
 void    ft_putchar(char c);
 
