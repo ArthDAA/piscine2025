@@ -1,4 +1,4 @@
-void    rush(int x, int y);
+void    rush(int x, int y, char a, char b, char c, char d, char e, char f);
 
 int	main(int argc, char **argv)
 {
