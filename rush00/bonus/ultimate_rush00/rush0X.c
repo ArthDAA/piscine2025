@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rush0X.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/13 22:45:10 by arde-ass          #+#    #+#             */
+/*   Updated: 2025/07/13 22:56:46 by arde-ass         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 typedef struct pos
 {
 	int	x;
 	int	y;
-} t_pos;
+}	t_pos;
 
 void	ft_putchar(char c);
 
@@ -26,9 +38,9 @@ void	ft_print(t_pos p, int i, int j, char *character)
 
 void	rush(int x, int y, char *character)
 {
-	int	i;
-	int	j;
-	t_pos	p;
+	int		i;
+	int		j;
+	t_pos			p;
 
 	i = 0;
 	j = 0;

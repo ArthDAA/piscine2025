@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/13 22:45:05 by arde-ass          #+#    #+#             */
+/*   Updated: 2025/07/13 22:58:04 by arde-ass         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 void	rush(int x, int y, char *character);
 
 void	ft_putchar(char c);
@@ -17,10 +29,10 @@ void	ft_putstr(char *str)
 int	main(int argc, char **argv)
 {
 	char	character[6];
-	
-	if (argc <= 4)
+
+	if (argc <= 6 || argc == 6)
 	{
-		ft_putstr("6 arguments svp!\nFormat: ./a.out A B C D E F\n");
+		ft_putstr("6 arguments svp!\nFormat: ./a.out 'A' 'B' 'C' 'D' 'E' 'F'\n");
 		return (1);
 	}
 	character[0] = argv[1][0];
