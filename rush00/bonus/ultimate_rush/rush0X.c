@@ -1,4 +1,4 @@
-void    ft_putchar(char c);
+void	ft_putchar(char c);
 
 void	ft_print(int x, int y, int i, int j, char *character)
 {
@@ -18,11 +18,11 @@ void	ft_print(int x, int y, int i, int j, char *character)
 		ft_putchar(' ');
 }
 
-void    rush(int x, int y, char a, char b, char c, char d, char e, char f)
+void	rush(int x, int y, char a, char b, char c, char d, char e, char f)
 {
 	int	i;
 	int	j;
-	char characters[6];
+	char	characters[6];
 
 	i = 0;
 	j = 0;
@@ -33,8 +33,7 @@ void    rush(int x, int y, char a, char b, char c, char d, char e, char f)
 	characters[4] = e;
 	characters[5] = f;
 	if (x <= 0 || y <= 0)
-		return;
-
+		return (void);
 	while (i < x)
 	{
 		while (j < y)

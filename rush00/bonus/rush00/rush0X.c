@@ -3,9 +3,9 @@
 #define BOT_LEFT '0'
 #define BOT_RIGHT 'o'
 #define LINE '-'
-#define COLUMN ''
+#define COLUMN '|'
 
-voidi	ft_putchar(char c);
+void	ft_putchar(char c);
 
 void	ft_print(int x, int y, int i, int j)
 {
@@ -33,7 +33,7 @@ void	rush(int x, int y)
 	i = 0;
 	j = 0;
 	if (x <= 0 || y <= 0)
-		return (1);
+		return;
 	while (i < x)
 	{
 		while (j < y)
