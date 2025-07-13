@@ -1,7 +1,7 @@
-void    rush(int x, int y);
+void	rush(int x, int y);
 
-int	main()
+int	main(void)
 {
-    rush(123, 42);
-    return (0);
+	rush(123, 42);
+	return (0);
 }
