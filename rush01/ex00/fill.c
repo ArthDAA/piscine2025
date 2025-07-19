@@ -6,15 +6,17 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:39:34 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/19 15:39:36 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/19 18:14:26 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		check_valid(int grid[4][4], int clues[16]);
+int	check_valid(int grid[4][4], int clues[16]);
 
-int		is_used(int grid[4][4], int row, int col, int num)
+int	is_used(int grid[4][4], int row, int col, int num)
 {
-	int i = 0;
+	int	i;
+
+	i = 0;
 	while (i < 4)
 	{
 		if (grid[row][i] == num || grid[i][col] == num)
@@ -24,9 +26,11 @@ int		is_used(int grid[4][4], int row, int col, int num)
 	return (0);
 }
 
-int		fill(int grid[4][4], int clues[16], int row, int col)
+int	fill(int grid[4][4], int clues[16], int row, int col)
 {
-	int num = 1;
+	int	num;
+
+	num = 1;
 	if (row == 4)
 		return (check_valid(grid, clues));
 	while (num <= 4)

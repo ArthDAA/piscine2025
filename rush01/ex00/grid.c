@@ -6,7 +6,7 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:39:44 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/19 15:39:46 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/19 17:23:00 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	print_grid(int grid[4][4])
 {
-	int r;
-	int c;
-	char ch;
+	int		r;
+	int		c;
+	char	ch;
 
 	r = 0;
 	while (r < 4)

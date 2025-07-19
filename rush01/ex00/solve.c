@@ -6,7 +6,7 @@
 /*   By: arde-ass <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/19 15:39:58 by arde-ass          #+#    #+#             */
-/*   Updated: 2025/07/19 15:40:00 by arde-ass         ###   ########.fr       */
+/*   Updated: 2025/07/19 18:17:56 by arde-ass         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,20 @@ int		check_valid(int grid[4][4], int clues[16]);
 void	print_grid(int grid[4][4]);
 int		fill(int grid[4][4], int clues[16], int row, int col);
 
-int		to_int(char c)
+int	to_int(char c)
 {
 	if (c >= '1' && c <= '4')
 		return (c - '0');
 	return (0);
 }
 
-int		parse_clues(char *str, int clues[16])
+int	parse_clues(char *str, int clues[16])
 {
-	int i = 0;
-	int j = 0;
+	int	i;
+	int	j;
+
+	i = 0;
+	j = 0;
 	while (str[i])
 	{
 		if (str[i] >= '1' && str[i] <= '4')
@@ -36,11 +39,12 @@ int		parse_clues(char *str, int clues[16])
 	return (j == 16);
 }
 
-int		solve(char *input)
+int	solve(char *input)
 {
-	int grid[4][4];
-	int clues[16];
-	int i, j;
+	int	grid[4][4];
+	int	clues[16];
+	int	i;
+	int	j;
 
 	i = 0;
 	while (i < 4)
